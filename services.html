@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Frisco Landscaping</title>
+    <meta name="description" content="Explore our comprehensive landscaping services in Frisco, TX. From design and hardscaping to weekly maintenance and irrigation solutions.">
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5B4BFF',
+                        secondary: '#EEF0FF',
+                        accent: '#00E5A8',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px rgba(0,0,0,0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-700 antialiased bg-white selection:bg-primary selection:text-white">
+
+    <!-- Header / Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300">
+        <nav class="max-w-7xl mx-auto px-8 md:px-16 h-20 flex items-center justify-between">
+            <div class="flex items-center justify-between w-full">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+                        </svg>
+                    </div>
+                    <span class="text-2xl font-semibold text-primary tracking-tight">Frisco<span class="text-gray-800 font-light">Landscaping</span></span>
+                </a>
+                
+                <!-- Back Link -->
+                <a href="index.html" class="text-gray-600 hover:text-primary font-medium transition-colors duration-300 flex items-center gap-2">
+                    <i class="fas fa-arrow-left text-sm"></i> Back
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header / Hero -->
+    <section class="pt-32 pb-16 md:pt-40 md:pb-20 bg-secondary relative overflow-hidden">
+        <!-- Background Decorations -->
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary/5 to-transparent rounded-l-full"></div>
+        <div class="absolute bottom-0 left-0 w-48 h-48 bg-accent/10 rounded-full blur-2xl"></div>
+
+        <div class="max-w-7xl mx-auto px-8 md:px-16 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6">
+                Our <span class="text-primary">Services</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 font-light max-w-2xl mx-auto leading-relaxed">
+                Comprehensive landscaping solutions tailored to the Frisco climate. We bring expert care and artistic vision to every inch of your property.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+                
+                <!-- Service 1: Landscape Design -->
+                <div class="group p-8 bg-white rounded-2xl border border-gray-100 shadow-soft hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <i class="fas fa-pencil-ruler text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Custom Landscape Design</h3>
+                    <p class="text-gray-600 font-light leading-relaxed">
+                        From 3D renderings to plant selection, we design cohesive outdoor living spaces that thrive in Texas weather. Visualize your dream yard before we break ground.
+                    </p>
+                </div>
+
+                <!-- Service 2: Lawn Maintenance -->
+                <div class="group p-8 bg-white rounded-2xl border border-gray-100 shadow-soft hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <i class="fas fa-leaf text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Total Lawn Care</h3>
+                    <p class="text-gray-600 font-light leading-relaxed">
+                        Scheduled mowing, edging, trimming, and fertilization programs. We ensure your turf remains lush, green, and weed-free throughout the changing seasons.
+                    </p>
+                </div>
+
+                <!-- Service 3: Hardscaping -->
+                <div class="group p-8 bg-white rounded-2xl border border-gray-100 shadow-soft hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <i class="fas fa-layer-group text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Hardscaping & Patios</h3>
+                    <p class="text-gray-600 font-light leading-relaxed">
+                        Extend your living space outdoors with custom stone patios, walkways, retaining walls, and fire pits built with high-quality, durable materials.
+                    </p>
+                </div>
+
+                <!-- Service 4: Irrigation -->
+                <div class="group p-8 bg-white rounded-2xl border border-gray-100 shadow-soft hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <i class="fas fa-faucet-drip text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Irrigation Solutions</h3>
+                    <p class="text-gray-600 font-light leading-relaxed">
+                        Smart sprinkler installation, system audits, and repairs. We optimize water usage to keep your landscape hydrated while conserving precious resources.
+                    </p>
+                </div>
+
+                <!-- Service 5: Seasonal Cleanups -->
+                <div class="group p-8 bg-white rounded-2xl border border-gray-100 shadow-soft hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <i class="fas fa-calendar-check text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Seasonal Cleanups</h3>
+                    <p class="text-gray-600 font-light leading-relaxed">
+                        Comprehensive spring and fall cleanups, including leaf removal, pruning, and bed preparation to protect your plants and prepare for the season ahead.
+                    </p>
+                </div>
+
+                <!-- Service 6: Tree & Shrub Care -->
+                <div class="group p-8 bg-white rounded-2xl border border-gray-100 shadow-soft hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <i class="fas fa-tree text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Tree & Shrub Care</h3>
+                    <p class="text-gray-600 font-light leading-relaxed">
+                        Expert trimming, pruning, and disease management for your trees and ornamental shrubs. We maintain the structural integrity and beauty of your greenery.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 md:py-28 bg-primary relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+        <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
+        
+        <div class="max-w-4xl mx-auto px-8 text-center relative z-10">
+            <h2 class="text-3xl md:text-5xl font-semibold text-white mb-6">Ready to Transform Your Yard?</h2>
+            <p class="text-lg text-white/90 mb-10 font-light">
+                Whether you need a complete redesign or reliable weekly maintenance, our team in Frisco is ready to help. Get a free estimate today.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-primary px-10 py-4 rounded-full font-semibold hover:bg-gray-50 hover:scale-105 transition-all duration-300 shadow-lg">
+                    Get Free Quote
+                </a>
+                <a href="index.html#faq" class="bg-transparent border-2 border-white/30 text-white px-10 py-4 rounded-full font-semibold hover:bg-white/10 hover:border-white transition-all duration-300">
+                    Read FAQ
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <a href="index.html" class="flex items-center gap-2 mb-6">
+                        <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+                            </svg>
+                        </div>
+                        <span class="text-xl font-semibold text-primary tracking-tight">Frisco<span class="text-gray-800 font-light">Landscaping</span></span>
+                    </a>
+                    <p class="text-gray-500 font-light text-sm leading-relaxed">
+                        Transforming Frisco properties into stunning outdoor retreats with professional design and maintenance services.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-6">Services</h4>
+                    <ul class="space-y-3 text-sm text-gray-600 font-light">
+                        <li><a href="#" class="hover:text-primary transition-colors">Landscape Design</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Lawn Maintenance</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Irrigation Systems</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Hardscaping</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-6">Company</h4>
+                    <ul class="space-y-3 text-sm text-gray-600 font-light">
+                        <li><a href="index.html#features" class="hover:text-primary transition-colors">About Us</a></li>
+                        <li><a href="index.html#reviews" class="hover:text-primary transition-colors">Reviews</a></li>
+                        <li><a href="index.html#faq" class="hover:text-primary transition-colors">FAQ</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-6">Contact</h4>
+                    <ul class="space-y-3 text-sm text-gray-600 font-light">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-map-marker-alt text-primary/80"></i>
+                            Frisco, TX 75034
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone text-primary/80"></i>
+                            (555) 123-4567
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-primary/80"></i>
+                            hello@friscolandscaping.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-sm font-light">© 2023 Frisco Landscaping. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
