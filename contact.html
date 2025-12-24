@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Frisco Landscaping</title>
+    <meta name="description" content="Contact Frisco Landscaping for a free quote on landscape design, maintenance, and outdoor living solutions in Frisco, TX.">
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5B4BFF',
+                        secondary: '#EEF0FF',
+                        accent: '#00E5A8',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px rgba(0,0,0,0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-700 antialiased bg-white selection:bg-primary selection:text-white flex flex-col min-h-screen">
+
+    <!-- Header / Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300">
+        <nav class="max-w-7xl mx-auto px-8 md:px-16 h-20 flex items-center justify-between">
+            <div class="flex items-center justify-between w-full">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+                        </svg>
+                    </div>
+                    <span class="text-2xl font-semibold text-primary tracking-tight">Frisco<span class="text-gray-800 font-light">Landscaping</span></span>
+                </a>
+                
+                <!-- Back Link -->
+                <a href="index.html" class="text-gray-600 hover:text-primary font-medium transition-colors duration-300">← Back</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-12 md:pt-40 md:pb-20 bg-secondary overflow-hidden">
+        <!-- Background Decorations -->
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary/5 to-transparent rounded-l-full"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2"></div>
+
+        <div class="max-w-7xl mx-auto px-8 md:px-16 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 leading-tight mb-6">
+                Get in <span class="text-primary">Touch</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 font-light max-w-2xl mx-auto">
+                Ready to transform your outdoor space? Fill out the form below or contact us directly to schedule your consultation in Frisco, TX.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                
+                <!-- Left Column: Contact Form -->
+                <div class="bg-white p-8 md:p-10 rounded-2xl shadow-soft border border-gray-100">
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-6">Send us a Message</h2>
+                    
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" class="space-y-6">
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        <input type="hidden" name="redirect" value="false">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        
+                        <div>
+                          <label for="name" class="block text-sm font-semibold mb-2 text-gray-700">Full Name *</label>
+                          <input type="text" name="name" id="name" required 
+                            class="w-full px-4 py-3 border border-gray-200 rounded-lg outline-none transition-all focus:ring-2 focus:ring-primary/20 focus:border-primary bg-gray-50 focus:bg-white"
+                            placeholder="John Doe">
+                        </div>
+                        
+                        <div>
+                          <label for="email" class="block text-sm font-semibold mb-2 text-gray-700">Email Address *</label>
+                          <input type="email" name="email" id="email" required 
+                            class="w-full px-4 py-3 border border-gray-200 rounded-lg outline-none transition-all focus:ring-2 focus:ring-primary/20 focus:border-primary bg-gray-50 focus:bg-white"
+                            placeholder="john@example.com">
+                        </div>
+                        
+                        <div>
+                          <label for="phone" class="block text-sm font-semibold mb-2 text-gray-700">Phone Number</label>
+                          <input type="tel" name="phone" id="phone" 
+                            class="w-full px-4 py-3 border border-gray-200 rounded-lg outline-none transition-all focus:ring-2 focus:ring-primary/20 focus:border-primary bg-gray-50 focus:bg-white"
+                            placeholder="+1 (555) 000-0000">
+                        </div>
+                        
+                        <div>
+                          <label for="message" class="block text-sm font-semibold mb-2 text-gray-700">Message *</label>
+                          <textarea name="message" id="message" required rows="5" 
+                            class="w-full px-4 py-3 border border-gray-200 rounded-lg outline-none resize-none transition-all focus:ring-2 focus:ring-primary/20 focus:border-primary bg-gray-50 focus:bg-white"
+                            placeholder="How can we help you?"></textarea>
+                        </div>
+                        
+                        <button type="submit" id="submit-btn"
+                          class="w-full bg-primary text-white font-semibold py-4 px-8 rounded-lg transition-all duration-200 transform hover:scale-[1.02] hover:bg-opacity-90 shadow-lg shadow-primary/30">
+                          Send Message
+                        </button>
+                        
+                        <div id="form-message" class="mt-4 p-4 rounded-lg hidden bg-green-500 text-white font-medium text-center">
+                          ✓ Message sent successfully!
+                        </div>
+                    </form>
+
+                    <script>
+                        (function() {
+                          const form = document.getElementById('contact-form');
+                          const submitBtn = document.getElementById('submit-btn');
+                          const messageDiv = document.getElementById('form-message');
+                          
+                          form.addEventListener('submit', async (e) => {
+                            e.preventDefault();
+                            submitBtn.disabled = true;
+                            submitBtn.textContent = 'Sending...';
+                            
+                            try {
+                              const formData = new FormData(form);
+                              const response = await fetch('https://api.web3forms.com/submit', {
+                                method: 'POST',
+                                body: formData
+                              });
+                              
+                              const result = await response.json();
+                              
+                              if (result.success) {
+                                form.reset();
+                                messageDiv.classList.remove('hidden');
+                                submitBtn.textContent = 'Sent!';
+                                
+                                setTimeout(() => {
+                                  messageDiv.classList.add('hidden');
+                                  submitBtn.disabled = false;
+                                  submitBtn.textContent = 'Send Message';
+                                }, 5000);
+                              } else {
+                                throw new Error('Submission failed');
+                              }
+                            } catch (error) {
+                              submitBtn.disabled = false;
+                              submitBtn.textContent = 'Send Message';
+                              messageDiv.style.background = '#ef4444';
+                              messageDiv.textContent = '✗ Failed to send. Please try again.';
+                              messageDiv.classList.remove('hidden');
+                              
+                              setTimeout(() => {
+                                messageDiv.classList.add('hidden');
+                                messageDiv.style.background = '#22c55e';
+                                messageDiv.textContent = '✓ Message sent successfully!';
+                              }, 5000);
+                            }
+                          });
+                        })();
+                    </script>
+                </div>
+
+                <!-- Right Column: Business Info & Map -->
+                <div class="space-y-12">
+                    
+                    <!-- Contact Info -->
+                    <div>
+                        <h2 class="text-2xl font-semibold text-gray-900 mb-8">Contact Information</h2>
+                        
+                        <div class="space-y-8">
+                            <!-- Address -->
+                            <div class="flex items-start gap-5">
+                                <div class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-primary flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900 text-lg mb-1">Our Location</h3>
+                                    <p class="text-gray-600 leading-relaxed">
+                                        Frisco Landscaping<br>
+                                        123 main st<br>
+                                        Frisco, Tx, 75035<br>
+                                        United States
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="flex items-start gap-5">
+                                <div class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-primary flex-shrink-0">
+                                    <i class="fas fa-phone-alt text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900 text-lg mb-1">Phone Number</h3>
+                                    <a href="tel:4695551212" class="text-gray-600 hover:text-primary transition-colors block text-lg font-medium">
+                                        (469) 555-1212
+                                    </a>
+                                    <p class="text-sm text-gray-400 mt-1">Mon-Fri: 8am - 6pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div>
+                        <h3 class="font-semibold text-gray-900 text-lg mb-4">Find Us</h3>
+                        <div class="w-full h-64 md:h-80 rounded-2xl overflow-hidden shadow-soft border border-gray-100 relative group">
+                            <iframe 
+                                width="100%" 
+                                height="100%" 
+                                frameborder="0" 
+                                scrolling="no" 
+                                marginheight="0" 
+                                marginwidth="0" 
+                                src="https://www.openstreetmap.org/export/embed.html?bbox=-180%2C-90%2C180%2C90&amp;layer=mapnik"
+                                style="border: 0;"
+                                loading="lazy"
+                                title="Business Location Map"
+                                class="filter grayscale-[20%] group-hover:grayscale-0 transition-all duration-500"
+                            ></iframe>
+                        </div>
+                        <script>
+                            // Geocode address and update map
+                            (function() {
+                              const address = "123 main st, Frisco, Tx, 75035, United States";
+                              const iframe = document.querySelector('iframe[title="Business Location Map"]');
+                              
+                              fetch('https://nominatim.openstreetmap.org/search?format=json&q=' + encodeURIComponent(address))
+                                .then(response => response.json())
+                                .then(data => {
+                                  if (data && data.length > 0) {
+                                    const lat = parseFloat(data[0].lat);
+                                    const lon = parseFloat(data[0].lon);
+                                    const bbox = (lon - 0.01) + '%2C' + (lat - 0.01) + '%2C' + (lon + 0.01) + '%2C' + (lat + 0.01);
+                                    const marker = lat + '%2C' + lon;
+                                    iframe.src = 'https://www.openstreetmap.org/export/embed.html?bbox=' + bbox + '&layer=mapnik&marker=' + marker;
+                                  }
+                                })
+                                .catch(err => console.log('Map geocoding error:', err));
+                            })();
+                        </script>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 border-t border-gray-200 py-12 mt-auto">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-2 group">
+                    <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+                        </svg>
+                    </div>
+                    <span class="text-xl font-semibold text-primary tracking-tight">Frisco<span class="text-gray-800 font-light">Landscaping</span></span>
+                </a>
+
+                <div class="text-gray-500 text-sm">
+                    &copy; 2023 Frisco Landscaping. All rights reserved.
+                </div>
+
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                        <i class="fab fa-facebook-f text-lg"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                        <i class="fab fa-instagram text-lg"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                        <i class="fab fa-twitter text-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
